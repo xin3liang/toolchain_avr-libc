@@ -1,0 +1,59 @@
+2011-02-16  Joerg Wunsch <j.gnu@uriah.heep.sax.de>
+
+	Released avr-libc-1.7.1.
+
+2011-02-16  Anitha Boyapati <anitha.boyapati@atmel.com>
+
+	* include/avr/power.h: Changes to power_all_enable()/disable() for 
+	Xmega A and D family
+
+2011-02-14  Anitha Boyapati <anitha.boyapati@atmel.com>
+
+	Thanks to Praveen Kaushik <Praveen_Kumar.Kaushi@atmel.com> for the device
+	support.
+	* configure.ac: Support for ATMega16HVB RevB, ATMega32HVB RevB.
+	* devtools/gen-avr-lib-tree.sh: Same.
+	* doc/api/main_page.dox: Same.
+	* doc/api/using-tools.dox: Same.
+	* include/avr/eeprom.h: Same.
+	* include/avr/io.h: Same.
+	* include/avr/iom16hvb.h: Header file regenerated.
+	* include/avr/iom16hvbrevb.h: Added newly.
+	* include/avr/iom32hvb.h: Header file regenerated.
+	* include/avr/iom32hvbrevb.h: Added newly.
+	* include/avr/Makefile.am: Support for atmega16HVB RevB, 
+	ATMega32HVB RevB.
+	* include/avr/power.h: Same.
+	* include/avr/sleep.h: Same.
+	* include/avr/wdt.h: Same.
+
+2011-02-14  Anitha Boyapati <anitha.boyapati@atmel.com>
+
+	Thanks to Usha Gupta <usha.gupta@atmel.com> for the device
+	support.
+	* include/avr/io.h: Support for AVR Tiny84a
+	* include/avr/iotn84a.h: Same.
+	* include/avr/Makefile.am: Same.
+
+2011-02-14  Anitha Boyapati <anitha.boyapati@atmel.com>
+
+	Fix for #bug31873
+	* include/avr/power.h: Modifications to power_aes_enable/disable() 
+    power_all_enable/disable() functions for Xmega devices. 
+
+2011-02-11  Anitha Boyapati <anitha.boyapati@atmel.com>
+
+	Thanks to Praveen Kaushik <Praveen_Kumar.Kaushi@atmel.com> for
+	the fix for #bug31990.
+	* include/avr/io90pwm81.h: PRPSC0 is renamed to PRPSCR in sync 
+	with device XML file.
+	* include/avr/power.h:	power_psc0_enable()/disable() have been 
+	renamed to power_pscr_enable()/disable(). Documentation changes
+	to include PWM81 are also done.
+
+
+
+2011-02-09  Joerg Wunsch <j.gnu@uriah.heep.sax.de>
+
+	* include/avr/iom8x.h (_VECTORS_SIZE): fix wrong vector table size
+	for ATmega168A devices.
